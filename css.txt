@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+/* Left Section - Headline */
+.left-section {
+    max-width: 50%;
+}
+
+.left-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.left-section h1 span {
+    color: #f47a27;
+}
+
+.left-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.left-section .buttons {
+    margin-top: 2rem;
+}
+
+.left-section button,
+.left-section a {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin-right: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.left-section button:hover,
+.left-section a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Right Section - Form */
+.right-section {
+    background-color: white;
+    color: black;
+    padding: 2.5rem;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.right-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #f47a27;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-container input {
+    margin-right: 0.5rem;
+}
+
+.signup-btn {
+    width: 100%;
+    background-color: #e52323;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.signup-btn:hover {
+    background-color: #c41f1f;
+}
+
+.alt-signin {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.alt-signin img {
+    height: 30px;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        height: auto;
+    }
+
+    .left-section {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .right-section {
+        margin-top: 2rem;
+    }
+}
